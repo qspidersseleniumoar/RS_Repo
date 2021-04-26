@@ -1,9 +1,12 @@
 package com.rmg.projecttest;
 import static io.restassured.RestAssured.*;
 
-public class GetSingleProject {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+public class GetSingleProjectTest {
+
+	   @Test
+		public void test2() {
 		
 		when()
 		  .get("http://localhost:8085/projects/TY_PROJ_003")
